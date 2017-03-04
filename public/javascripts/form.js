@@ -187,6 +187,12 @@ $(document).ready(function() {
                             paramReference.type = "string";
                         }
 
+                        if (paramReference.type == "json") {
+                            parameterOptions["type"] = "json";
+                            parameterOptions["cols"] = 20;
+                            paramReference.type = "string";
+                        }
+                        
                         //Sets options to type boolean 
                         if (paramReference.type == "boolean") {
                             parameterOptions["type"] = "select";
